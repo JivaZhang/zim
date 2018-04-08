@@ -1,0 +1,10 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-04-08T11:03:23+08:00
+
+====== ssh ======
+Created 星期日 08 四月 2018
+
+* **ssh product a ssh key command**
+   $ssh-keygen -t rsa
+
