@@ -1,0 +1,10 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-07-23T17:08:17+08:00
+
+====== setup ======
+Created 星期一 23 七月 2018
+
+一、开发环境搭建
+1、下载必要的工具 
+sudo apt-get install git libusb-1.0.0-dev（libusb是st-link要的底层驱动）
