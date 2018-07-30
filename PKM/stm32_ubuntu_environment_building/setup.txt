@@ -8,3 +8,15 @@ Created 星期一 23 七月 2018
 一、开发环境搭建
 1、下载必要的工具 
 sudo apt-get install git libusb-1.0.0-dev（libusb是st-link要的底层驱动）
+ 2、添加gcc-arm-embedded源，初始化编译器 
+sudo add-apt-repository ppa:terry.guo/gcc-arm-embedded 
+sudo apt-get update 
+sudo apt-get install gcc-arm-none-eabi
+
+3、初始化ST-LINK调试与烧写器驱动(有人喜欢用J-LINK，在Linux下也可以，不过安装驱动就是稍微麻烦一点，有兴趣的可以自己研究) 
+git clone https://github.com/texane/stlink.git 
+cd stlink/ 
+./autogen.sh 
+./configure 
+make && make install 
+此时连接st-link 这时用lsusb命令就可以查看到相关的设备已经连接上，如下图 
